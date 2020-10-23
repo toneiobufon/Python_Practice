@@ -26,3 +26,27 @@ class Bank_Account():
         else:
             self.balance -= withdraw
             print('Withdrawal done, balance updated ')
+
+
+#creating a new account 
+account = Bank_Account('nono', 500)
+print(account)
+print('\n'*2)
+
+#making a deposit
+account.deposit(200)
+
+#checking balance after deposit
+print(f'Current Balance : {account.balance}')
+print('\n'*2)
+
+#checking withdrawal 
+account.withdraw(500)
+print(f'Current Balance : {account.balance}')
+print('\n'*2)
+
+
+#checking withdrawal with not enough funds
+account.withdraw(500)
+print(f'Current Balance : {account.balance}')
+print('\n'*2)
