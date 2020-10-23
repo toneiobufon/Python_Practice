@@ -19,4 +19,10 @@ class Bank_Account():
         self.balance += deposit
         print('Deposit accepted and balance is updated!')
 
-    
+    #withdraw method
+    def withdraw(self, withdraw):
+        if withdraw > self.balance:
+            print('Cannot be done, try a different amount')
+        else:
+            self.balance -= withdraw
+            print('Withdrawal done, balance updated ')
