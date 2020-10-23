@@ -9,6 +9,14 @@ class Bank_Account():
     def __init__(self, owner, balance =0):
         self.owner = owner
         self.balance = balance
-    
+
+    #to print information
     def __str__(self):
         return f'Account owner is: {self.owner}\n Balance : {self.balance}'
+
+    #deposit method to deposit money
+    def deposit(self, deposit):
+        self.balance += deposit
+        print('Deposit accepted and balance is updated!')
+
+    
