@@ -4,7 +4,10 @@ def sort_by_length(lst):
     #the .sort method on lists in python sorts in place
 
 
-    new =sorted(lst)
-    return new
+    # new =sorted(lst)
+    # return new
+    #same result
+    return sorted(lst)
 
 print(sort_by_length(['name', 'nam', 'named']))
+print(sort_by_length(['jun', 'may', 'jul']))
