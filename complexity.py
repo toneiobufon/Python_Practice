@@ -27,3 +27,27 @@ O(0.5n + 2003) --numbers are added
 O(n + 2003)--number in front of n is dropped
 O(n) -- this is the time complexity of the function
 """"
+
+
+
+#####################################################################################################
+
+def removeDuplicate(arr):
+    differents = {} #initializing variable O(1)
+
+    #in the loop, O(n)* O(1) * O(1)* O(1) = O(n)
+  for i in arr:#O(n)
+    if i not in differents: #O(1)
+        differents[i] = [] #O(1)
+
+    differents[i] += [i] #a couple of things happening here. 1. appending to the end of the list-O(1)
+                            #2.accessing the key in the dictionary is O(1)
+
+  return differents.keys() #the `keys` method takes all the keys in the dictionary 
+                            #and returns them all as a list, that is O(n)
+
+"""
+the time complexity here is O(n)+ O(n)= O(2*n) = O(n)
+"""
+
+#######################################################################################################
