@@ -43,5 +43,8 @@ def plus_one(digits):
             digits[i] += 1
             #since digit is not 9, then break
             return digits
-
-print(plus_one([1,2,9]))
+    #if we get out of the loop, then every digit is a 9, we need to add a 1 to the front of the digits list
+    return [1] +digits
+    # digits.insert(0,1)
+    return digits
+print(plus_one([9,9]))
