@@ -57,4 +57,9 @@ Examples:
 """
 def single_number(nums):
     # Your code here
-    pass
+   
+    if nums.count(x) == 1:
+        return x
+
+
+print(single_number([3,3,2]))

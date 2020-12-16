@@ -39,3 +39,18 @@ def top_k_frequent(words, k):
     List[str]
     """
     # Your code here
+
+    word_count = {}
+
+    #to check if word is in words
+    for word in words:
+        if word in word_count:
+            word_count[word] += 1
+        else:
+            word_count[word] = 1
+
+    #use built in sorting function to sort contents
+    result = sorted(word_count, key = lambda x:())
+    return result
+
+print(top_k_frequent(["the", "sky", "is", "cloudy", "the", "the", "the", "cloudy", "is", "is"], 4))
