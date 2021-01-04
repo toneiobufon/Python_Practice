@@ -26,6 +26,6 @@ def tiny_pairs(a,b,k):
 
 a= [1,2,3,4]
 b= [1,2,3,4]
-k = 51
+k = 25
 
 print(tiny_pairs(a,b,k))
