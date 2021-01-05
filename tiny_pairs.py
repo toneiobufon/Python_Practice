@@ -17,7 +17,6 @@ def tiny_pairs(a,b,k):
         
         s = int(str(a[i]) + str(b[i])) 
             
-        print(s)
         if s < k:
             count +=1
     
@@ -26,6 +25,6 @@ def tiny_pairs(a,b,k):
 
 a= [1,2,3,4]
 b= [1,2,3,4]
-k = 25
+k = 35
 
 print(tiny_pairs(a,b,k))
